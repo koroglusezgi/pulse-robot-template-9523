@@ -63,19 +63,19 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				// Custom colors for Pulse Robot
+				// Custom colors for Kotodama AI
 				pulse: {
-					"50": "#fff7ed",
-					"100": "#ffedd5",
-					"200": "#fed7aa",
-					"300": "#fdba74",
-					"400": "#fb923c",
-					"500": "#f97316", // Primary orange
-					"600": "#ea580c",
-					"700": "#c2410c",
-					"800": "#9a3412",
-					"900": "#7c2d12",
-					"950": "#431407",
+					"50": "#f3f0ff",
+					"100": "#e9e5ff",
+					"200": "#d6ceff",
+					"300": "#b8a7ff",
+					"400": "#9574ff",
+					"500": "#6A29CF", // Primary purple
+					"600": "#5a1fb8",
+					"700": "#4c1b9a",
+					"800": "#3f187c",
+					"900": "#331366",
+					"950": "#1c0b3a",
 				},
 				dark: {
 					"900": "#121212", // Almost black
