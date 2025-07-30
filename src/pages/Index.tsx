@@ -64,13 +64,13 @@ const Index = () => {
       <main className="space-y-4 sm:space-y-8"> {/* Reduced space on mobile */}
         <Hero />
         <HumanoidSection />
-        <SpecsSection />
-        <DetailsSection />
-        <ImageShowcaseSection />
-        <Features />
+        {/* <SpecsSection /> */}
+        {/* <DetailsSection /> */}
+        {/* <ImageShowcaseSection /> */}
+        {/* <Features /> */}
         <Testimonials />
-        <Newsletter />
-        <MadeByHumans />
+        {/* <Newsletter /> */}
+        {/* <MadeByHumans /> */}
       </main>
       <Footer />
     </div>

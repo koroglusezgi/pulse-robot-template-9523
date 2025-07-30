@@ -91,7 +91,7 @@ const Hero = () => {
       className="overflow-hidden relative bg-cover" 
       id="hero" 
       style={{
-        backgroundImage: 'url("/Header-background.webp")',
+        //backgroundImage: 'url("/Header-background.webp")',
         backgroundPosition: 'center 30%', 
         padding: isMobile ? '100px 12px 40px' : '120px 20px 60px'
       }}
@@ -99,7 +99,7 @@ const Hero = () => {
       <div className="absolute -top-[10%] -right-[5%] w-1/2 h-[70%] bg-pulse-gradient opacity-20 blur-3xl rounded-full"></div>
       
       <div className="container px-4 sm:px-6 lg:px-8" ref={containerRef}>
-        <div className="flex flex-col lg:flex-row gap-6 lg:gap-12 items-center">
+        <div className="flex flex-col lg:flex-row gap-2 lg:gap-12 items-center">
           <div className="w-full lg:w-1/2">
             <div 
               className="pulse-chip mb-3 sm:mb-6 opacity-0 animate-fade-in" 
@@ -110,7 +110,7 @@ const Hero = () => {
             </div>
             
             <h1 
-              className="section-title text-3xl sm:text-4xl lg:text-5xl xl:text-6xl leading-tight opacity-0 animate-fade-in" 
+              className="section-title text-center text-2xl lg:text-left sm:text-3xl lg:text-4xl xl:text-6xl leading-tight opacity-0 animate-fade-in" 
               style={{ animationDelay: "0.3s" }}
             >
                Kotodama AI: Clone Your Voice,<br className="hidden sm:inline" />Speak Any Language
@@ -118,13 +118,13 @@ const Hero = () => {
              
              <p 
                style={{ animationDelay: "0.5s" }} 
-               className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal text-base sm:text-lg text-left"
+               className="section-subtitle mt-3 sm:mt-6 mb-4 sm:mb-8 text-center leading-relaxed opacity-0 animate-fade-in text-gray-950 font-normal text-base sm:text-lg lg:text-left"
              >
                Create lifelike audio and voiceovers with the most advanced AI voice generator. Transform your voice into 30+ languages instantly.
              </p>
             
             <div 
-              className="flex flex-col sm:flex-row gap-4 opacity-0 animate-fade-in" 
+              className="flex  justify-center lg:justify-start gap-4 opacity-0 animate-fade-in " 
               style={{ animationDelay: "0.7s" }}
             >
               <a 
@@ -160,11 +160,11 @@ const Hero = () => {
               </div>
             ) : (
               <>
-              <div className="absolute inset-0 bg-dark-900 rounded-2xl sm:rounded-3xl -z-10 shadow-xl"></div>
-              <div className="relative transition-all duration-500 ease-out overflow-hidden rounded-2xl sm:rounded-3xl shadow-2xl">
+              <div className="absolute inset-0 -z-10 "></div>
+              <div className="relative transition-all duration-500 ease-out overflow-hidden ">
                 <img 
                   ref={imageRef} 
-                  src="/lovable-uploads/5663820f-6c97-4492-9210-9eaa1a8dc415.png" 
+                  src="/mask_main.png" 
                   alt="Kotodama AI Voice Cloning App" 
                   className="w-full h-auto object-cover transition-transform duration-500 ease-out" 
                   style={{ transformStyle: 'preserve-3d' }} 
