@@ -134,7 +134,7 @@ const HumanoidSection = () => {
               
               {/* Mobile: Background image */}
               <div 
-                className="absolute inset-0 z-5 bg-center bg-cover opacity-30 md:hidden"
+                className="absolute inset-0 z-5 bg-center bg-cover opacity-50 md:hidden"
                 style={{
                   backgroundImage: "url('/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png')"
                 }}
@@ -150,8 +150,8 @@ const HumanoidSection = () => {
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center md:justify-end">
-                <div className="max-w-lg md:w-1/2 bg-black/50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none backdrop-blur-sm md:backdrop-blur-none">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-lg">
+                <div className="max-w-lg md:w-1/2 bg-gradient-to-r from-black/70 to-purple-900/60 md:bg-transparent p-4 md:p-0 rounded-xl md:rounded-none backdrop-blur-md md:backdrop-blur-none border border-white/10 md:border-none">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-2xl">
                     Clone any voice with just seconds of audio
                   </h3>
                 </div>
@@ -187,7 +187,7 @@ const HumanoidSection = () => {
               
               {/* Mobile: Background image */}
               <div 
-                className="absolute inset-0 z-5 bg-center bg-cover opacity-30 md:hidden"
+                className="absolute inset-0 z-5 bg-center bg-cover opacity-50 md:hidden"
                 style={{
                   backgroundImage: "url('/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png')"
                 }}
@@ -203,8 +203,8 @@ const HumanoidSection = () => {
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center md:justify-end">
-                <div className="max-w-lg md:w-1/2 bg-black/50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none backdrop-blur-sm md:backdrop-blur-none">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-lg">
+                <div className="max-w-lg md:w-1/2 bg-gradient-to-r from-black/70 to-purple-900/60 md:bg-transparent p-4 md:p-0 rounded-xl md:rounded-none backdrop-blur-md md:backdrop-blur-none border border-white/10 md:border-none">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-2xl">
                     Transform your voice into 30+ languages instantly
                   </h3>
                 </div>
@@ -240,7 +240,7 @@ const HumanoidSection = () => {
               
               {/* Mobile: Background image */}
               <div 
-                className="absolute inset-0 z-5 bg-center bg-cover opacity-30 md:hidden"
+                className="absolute inset-0 z-5 bg-center bg-cover opacity-50 md:hidden"
                 style={{
                   backgroundImage: "url('/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png')"
                 }}
@@ -256,8 +256,8 @@ const HumanoidSection = () => {
               </div>
               
               <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center md:justify-end">
-                <div className="max-w-lg md:w-1/2 bg-black/50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none backdrop-blur-sm md:backdrop-blur-none">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-lg">
+                <div className="max-w-lg md:w-1/2 bg-gradient-to-r from-black/70 to-purple-900/60 md:bg-transparent p-4 md:p-0 rounded-xl md:rounded-none backdrop-blur-md md:backdrop-blur-none border border-white/10 md:border-none">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-2xl">
                     Studio-grade quality, <span className="text-pulse-400">no actors needed</span>
                   </h3>
                 </div>
