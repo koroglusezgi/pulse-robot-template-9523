@@ -132,9 +132,26 @@ const HumanoidSection = () => {
                 </div>
               </div>
               
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+              {/* Mobile: Background image */}
+              <div 
+                className="absolute inset-0 z-5 bg-center bg-cover opacity-30 md:hidden"
+                style={{
+                  backgroundImage: "url('/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png')"
+                }}
+              ></div>
+              
+              {/* Tablet and larger: Left side image */}
+              <div className="hidden md:block absolute left-0 top-0 w-1/2 h-full z-5">
+                <img 
+                  src="/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png" 
+                  alt="Voice cloning illustration"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              
+              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center md:justify-end">
+                <div className="max-w-lg md:w-1/2 bg-black/50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none backdrop-blur-sm md:backdrop-blur-none">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-lg">
                     Clone any voice with just seconds of audio
                   </h3>
                 </div>
@@ -168,9 +185,26 @@ const HumanoidSection = () => {
                 </div>
               </div>
               
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+              {/* Mobile: Background image */}
+              <div 
+                className="absolute inset-0 z-5 bg-center bg-cover opacity-30 md:hidden"
+                style={{
+                  backgroundImage: "url('/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png')"
+                }}
+              ></div>
+              
+              {/* Tablet and larger: Left side image */}
+              <div className="hidden md:block absolute left-0 top-0 w-1/2 h-full z-5">
+                <img 
+                  src="/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png" 
+                  alt="Multilingual voice illustration"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              
+              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center md:justify-end">
+                <div className="max-w-lg md:w-1/2 bg-black/50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none backdrop-blur-sm md:backdrop-blur-none">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-lg">
                     Transform your voice into 30+ languages instantly
                   </h3>
                 </div>
@@ -204,9 +238,26 @@ const HumanoidSection = () => {
                 </div>
               </div>
               
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+              {/* Mobile: Background image */}
+              <div 
+                className="absolute inset-0 z-5 bg-center bg-cover opacity-30 md:hidden"
+                style={{
+                  backgroundImage: "url('/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png')"
+                }}
+              ></div>
+              
+              {/* Tablet and larger: Left side image */}
+              <div className="hidden md:block absolute left-0 top-0 w-1/2 h-full z-5">
+                <img 
+                  src="/lovable-uploads/9e5898fd-4ca5-4477-accf-89708ec49330.png" 
+                  alt="Professional quality illustration"
+                  className="w-full h-full object-cover object-center"
+                />
+              </div>
+              
+              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center md:justify-end">
+                <div className="max-w-lg md:w-1/2 bg-black/50 md:bg-transparent p-4 md:p-0 rounded-lg md:rounded-none backdrop-blur-sm md:backdrop-blur-none">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4 drop-shadow-lg">
                     Studio-grade quality, <span className="text-pulse-400">no actors needed</span>
                   </h3>
                 </div>
