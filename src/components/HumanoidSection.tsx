@@ -130,26 +130,58 @@ const HumanoidSection = () => {
                 opacity: isFirstCardVisible ? 0.9 : 0,
               }}
             >
-              <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
-                style={{
-                  backgroundImage: "url('/background-section1.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "top center",
-                  backgroundBlendMode: "overlay"
-                }}
-              ></div>
-              
-              <div className="absolute top-4 right-4 z-20">
+              <div className="absolute inset-0 z-0 "></div>
+
+              <div className="absolute top-4 right-4 z-20 hidden md:flex">
                 <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/20 backdrop-blur-sm text-white">
                   <span className="text-sm font-medium">Voice Cloning</span>
                 </div>
               </div>
-              
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Clone any voice with just seconds of audio
+
+              <div
+                className="absolute inset-0 z-0 bg-gradient-to-b bg-[#F2F2F2]"
+                // style={{
+                //   backgroundImage: "url('/background-section2-purple.png')",
+                //   backgroundSize: "cover",
+                //   backgroundPosition: "center",
+                //   backgroundBlendMode: "multiply"
+                // }}
+              ></div>
+
+
+              {/* Mobile: Background image */}
+              <div
+                className={`absolute inset-0 z-5 bg-center bg-contain bg-no-repeat transition-opacity duration-300 md:hidden ${
+                  activeCardIndex > 0 ? "opacity-0" : "opacity-80"
+                }`}
+                style={{
+                  backgroundImage:
+                    "url('/frame_1.png')",
+                }}
+              ></div>
+
+              {/* Tablet and larger: Left side image */}
+              <div
+                className={`hidden md:block absolute left-0 top-0 w-1/2 h-full z-5 transition-opacity duration-300 ${
+                  activeCardIndex > 0 ? "opacity-0" : "opacity-100"
+                }`}
+              >
+                <img
+                  src="/mask_1.png"
+                  alt="Voice cloning illustration"
+                  className="w-full h-full object-contain object-center"
+                />
+              </div>
+
+              <div
+                className={`relative z-10 p-5 sm:p-6 md:p-8 md:h-full flex items-center md:justify-end h-full flex-col md:flex-row md:items-center 
+                  justify-end transition-opacity duration-300 ${
+                  activeCardIndex > 0 ? "opacity-0" : "opacity-100"
+                }`}
+              >
+                <div className="max-w-lg md:w-1/2 flex flex-col md:flex-row md:justify-center justify-end">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-black font-bold leading-tight mb-2 text-center drop-shadow-2xl">
+                    Create a podcast-style output with the Studio Feature. Perfect for creating multispeaker scripts
                   </h3>
                 </div>
               </div>
@@ -175,13 +207,13 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
-                style={{
-                  backgroundImage: "url('/background-section2.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundBlendMode: "overlay"
-                }}
+                className="absolute inset-0 z-0 bg-gradient-to-b bg-[#F2F2F2]"
+                // style={{
+                //   backgroundImage: "url('/background-section2-purple.png')",
+                //   backgroundSize: "cover",
+                //   backgroundPosition: "center",
+                //   backgroundBlendMode: "multiply"
+                // }}
               ></div>
 
               <div className="absolute top-4 right-4 z-20 hidden md:flex">
@@ -189,10 +221,39 @@ const HumanoidSection = () => {
                   <span className="text-sm font-medium">Clone</span>
                 </div>
               </div>
-              
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
+
+              {/* Mobile: Background image */}
+              <div
+                className={`absolute inset-0 z-5  bg-center bg-contain bg-no-repeat transition-opacity duration-300 md:hidden ${
+                  activeCardIndex > 1 ? "opacity-0" : "opacity-80"
+                }`}
+                 style={{
+                  backgroundImage:
+                    "url('frame_2.png')",
+                }}
+              ></div>
+
+              {/* Tablet and larger: Left side image */}
+              <div
+                className={`hidden md:block absolute left-0 top-0 w-1/2 h-full z-5 transition-opacity duration-300 ${
+                  activeCardIndex > 1  ? "opacity-0" : "opacity-100"
+                }`}
+              >
+                <img
+                  src="/mask_2.png"
+                  alt="Multilingual voice illustration"
+                  className="w-full h-full object-contain object-center"
+                />
+              </div>
+
+              <div
+                className={`relative z-10 p-5 sm:p-6 md:p-8 md:h-full items-center
+                  h-full  flex flex-col md:flex-row md:items-center justify-end transition-opacity duration-300  ${
+                  activeCardIndex > 1 ? "opacity-0" : "opacity-100"
+                }`}
+              >
+                 <div className="max-w-lg md:w-1/2 flex-col md:justify-center justify-end">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-black font-bold text-center leading-tight mb-4 drop-shadow-2xl">
                     Transform your voice into 30+ languages instantly
                   </h3>
                 </div>
@@ -219,13 +280,13 @@ const HumanoidSection = () => {
               }}
             >
               <div
-                className="absolute inset-0 z-0 bg-gradient-to-b from-pulse-900/40 to-dark-900/80"
-                style={{
-                  backgroundImage: "url('/background-section3.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "bottom center",
-                  backgroundBlendMode: "overlay"
-                }}
+                className="absolute inset-0 z-0 bg-gradient-to-b bg-[#F2F2F2]"
+                // style={{
+                //   backgroundImage: "url('/background-section3-purple.png')",
+                //   backgroundSize: "cover",
+                //   backgroundPosition: "bottom center",
+                //   backgroundBlendMode: "multiply"
+                // }}
               ></div>
 
               <div className="absolute top-4 right-4 z-20 hidden md:flex">
@@ -233,11 +294,30 @@ const HumanoidSection = () => {
                   <span className="text-sm font-medium">Languages</span>
                 </div>
               </div>
-              
-              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex items-center">
-                <div className="max-w-lg">
-                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-white font-bold leading-tight mb-4">
-                    Studio-grade quality, <span className="text-pulse-400">no actors needed</span>
+
+              {/* Mobile: Background image */}
+              <div
+                className="absolute inset-0 z-5 bg-center bg-contain bg-no-repeat  md:hidden"
+                style={{
+                  backgroundImage:
+                    "url('frame_3.png')",
+                }}
+              />
+
+              {/* Tablet and larger: Left side image */}
+              <div className="hidden md:block absolute left-0 top-0 w-1/2 h-full z-5">
+                <img
+                  src="mask_3.png"
+                  alt="Professional quality illustration"
+                  className="w-full h-full object-contain object-center"
+                />
+              </div>
+
+              <div className="relative z-10 p-5 sm:p-6 md:p-8 h-full flex md:flex-row md:items-center justify-end">
+                <div className="max-w-lg md:w-1/2 flex flex-col md:flex-row md:justify-center justify-end">
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl font-display text-black font-bold text-center leading-tight pb-10 drop-shadow-2xl">
+                    Studio-grade quality,{" "}
+                    <span className="text-pulse-400">no actors needed</span>
                   </h3>
                 </div>
               </div>
